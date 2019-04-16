@@ -31,6 +31,9 @@
       <img id="hard" src="img/hard.jpg">
       <img id="mazemap" src="img/tinymaze.jpg">
       <a-asset-item id="rat" src="assets/rat.obj"></a-asset-item>
+      <a-asset-item id="wolf" src="assets/wolf.obj"></a-asset-item>
+
+
     </a-assets>
 
     <!-- Code for the sky -->
@@ -63,7 +66,8 @@
     <a-box static-body position="11.13183 0 5.94682" color="red" depth="1" material="" geometry="" scale="15 15 5" src="#briq"></a-box>
     <a-box static-body position="-20.43404 0 -34.9838" color="red" depth="1" material="" geometry="" scale="30 15 5" src="#briq" rotation="0 90"></a-box>
     <a-box static-body position="0 7.5" color="grey" depth="1" material="" geometry="" scale="100 1 100" src="#hard" visible=""></a-box>
-    <a-obj-model src="assets/rat.obj" color="darkslateblue" scale=".15 .15 .15" position="-4 0 -4" rotation="-90 0 0"></a-obj-model>
+    <a-obj-model src="assets/rat.obj" color="darkslateblue" scale="5 5 5" position="-4 0 -4" rotation="-90 0 0"></a-obj-model>
+    <a-obj-model src="#wolf" material="normalScale:{&quot;x&quot;:1,&quot;y&quot;:1}" obj-model="obj:assets/wolf.obj"></a-obj-model>
 
     <!-- Ground of Maze -->
     <a-plane src="#ded" height="300" width="300" depth="-2.5" rotation="-90 0" material="" geometry="" visible="" position="0 -2 0"></a-plane>
