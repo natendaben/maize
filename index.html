@@ -30,13 +30,14 @@
       <img id="briq" src="img/briq.jpeg">
       <img id="hard" src="img/hard.jpg">
       <img id="mazemap" src="img/tinymaze.jpg">
+      <a-asset-item id="rat" src="assets/rat.obj">
     </a-assets>
 
     <!-- Code for the sky -->
     <a-sky src="#sky" material="" geometry=""></a-sky>
 
     <!-- Code for the maze -->
-    <a-box id="ground" position='0 -0.5 0' width="200" height="1" depth="200" static-body material="src: #texture-floor"></a-box>
+    <a-box id="ground" position='0 -5 0' width="200" height="1" depth="200" static-body material="src: #texture-floor"></a-box>
     <a-box static-body position="20.73515 0 -14.2694" color="red" depth="1" material="" geometry="" scale="5 15 45" src="#briq"></a-box>
     <a-box static-body position="-34.55649 0 -47.47298" color="red" depth="1" material="" geometry="" scale="25 15 5" src="#briq"></a-box>
     <a-box static-body position="-46.877 0" color="red" depth="1" material="" geometry="" scale="5 15 100" src="#briq"></a-box>
@@ -61,7 +62,9 @@
     <a-box static-body position="0 7.5" color="grey" depth="1" material="" geometry="" scale="100 1 100" src="#hard" visible=""></a-box>
 
     <!-- Ground of Maze -->
-    <a-plane src="#ded" height="300" width="300" depth="-2.5" rotation="-90 0" material="" geometry="" visible="" position="0 .1 0"></a-plane>
+    <a-plane src="#ded" height="300" width="300" depth="-2.5" rotation="-90 0" material="" geometry="" visible="" position="0 -4 0"></a-plane>
+
+    <a-obj-model src="assets/rat.obj" color="darkslateblue" scale=".15 .15 .15" position="-4 0 -4" rotation="-90 0 0"></a-obj-model>
 
     <!-- _______________________________________________________________________________ -->
     </a-scene> 
