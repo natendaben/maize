@@ -1,5 +1,6 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
+
   <head>
     <meta charset="utf-8">
     <title>Maize</title>
@@ -8,45 +9,20 @@
     <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.2.0/dist/aframe-extras.min.js"></script>
     <script src="https://unpkg.com/aframe-maze-component@0.1.20/dist/aframe-maze-component.min.js"></script>
   </head>
-  <body> -->
-    <!-- see: https://github.com/donmccurdy/aframe-physics-system -->
-  	<!-- to see wireframes, set physics='debug: true' -->
-    <!-- <a-scene physics="debug: false">
-      <a-sky id="sky" color="#0000ff"></a-sky>
+
+  <body>
+    <!-- Create scene object -->
+    <a-scene physics="debug: false" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="">      
+
+    <!-- This code controls the "player"-->
       <a-entity id="player"
           camera
           universal-controls
           kinematic-body
-          position="-20 20.8 20">
-      </a-entity> -->
-      <!-- birds-eye view box to stand on -->
-      <!-- <a-box static-body
-          depth="0.25" height="0.5" width="0.5"
-          position="-20 19.8 20"
-          color="tomato"></a-box>
+          position="40 10 60">
+      </a-entity>
 
-
-      <a-entity id="maze1"
-          maze='size: 5 6; wall: #wall-one; cap: #end-cap; open: S 0 N 1 2 4 E 5;'
-          position='0 0.5 0'
-          rotation='0 0 0'></a-entity>
-
-      <a-box id="ground" position='0 -0.5 0' width="200" height="1" depth="200" static-body material="src: #texture-floor"></a-box>
-    </a-scene>
-  </body>
-</html> -->
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Afram Basics</title>
-  <script src="https://aframe.io/releases/0.9.0/aframe.min.js"></script>
-  <script src="js/aframe.js"></script>
-  <script src="js/aframe.min.js"></script>
-</head>
-<body>
-<a-scene inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="">
+    <!--Textures from images-->
     <a-assets>
       <img id="ded" src="img/ded.jpg">
       <img id="sky" src="img/sky.jpg">
@@ -55,7 +31,11 @@
       <img id="mazemap" src="img/tinymaze.jpg">
     </a-assets>
 
-    <a-camera position="41.24252 0 60.86228" userheight="0" camera="" rotation="-6.715275818083032 724.5624277224376" look-controls="" wasd-controls="fly: true" data-aframe-inspector-original-camera="" visible=""></a-camera>
+    <!-- Code for the sky -->
+    <a-sky src="#sky" material="" geometry=""></a-sky>
+
+    <!-- Code for the maze -->
+    <a-box id="ground" position='0 -0.5 0' width="200" height="1" depth="200" static-body material="src: #texture-floor"></a-box>
     <a-box static-body position="20.73515 0 -14.2694" color="red" depth="1" material="" geometry="" scale="5 15 45" src="#briq"></a-box>
     <a-box static-body position="-34.55649 0 -47.47298" color="red" depth="1" material="" geometry="" scale="25 15 5" src="#briq"></a-box>
     <a-box static-body position="-46.877 0" color="red" depth="1" material="" geometry="" scale="5 15 100" src="#briq"></a-box>
@@ -71,24 +51,17 @@
     <a-box static-body position="31.36348 0 20.32419" color="red" depth="1" material="" geometry="" scale="27 15 5" src="#briq"></a-box>
     <a-box static-body position="-20.67472 0 -12.62256" color="red" depth="1" material="" geometry="" scale="5 15 15" src="#briq"></a-box>
     <a-box static-body position="-8.03727 0 -20.30899" color="red" depth="1" material="" geometry="" scale="55 15 5" src="#briq"></a-box>
-    
-    
-    
     <a-box static-body position="1.64746 0 19.59285" color="red" depth="1" material="" geometry="" scale="15 15 5" src="#briq"></a-box>
     <a-box static-body position="6.91906 0 -38.50742" color="red" depth="1" material="" geometry="" scale="5 15 15" src="#briq"></a-box>
     <a-box static-body position="30.21901 0 -34.24457" color="red" depth="1" material="" geometry="" scale="15 15 5" src="#briq"></a-box>
-    <a-box static-body position="6.43758 0 13.10506" color="red" depth="1" material="" geometry="" scale="5 15 10" src="#briq"></a-box>
-    
-    
+    <a-box static-body position="6.43758 0 13.10506" color="red" depth="1" material="" geometry="" scale="5 15 10" src="#briq"></a-box>  
     <a-box static-body position="11.13183 0 5.94682" color="red" depth="1" material="" geometry="" scale="15 15 5" src="#briq"></a-box>
     <a-box static-body position="-20.43404 0 -34.9838" color="red" depth="1" material="" geometry="" scale="30 15 5" src="#briq" rotation="0 90"></a-box>
     <a-box static-body position="0 7.5" color="grey" depth="1" material="" geometry="" scale="100 1 100" src="#hard" visible=""></a-box>
-    
-  
 
-    <a-sky src="#sky" material="" geometry=""></a-sky>
-    
-    <a-plane src="#ded" height="100" width="100" depth="-2.5" rotation="-90 0" material="" geometry="" visible="" position="0 -7.5"></a-plane>
-  <div class="a-loader-title" style="display: none;">Afram Basics</div><div class="a-loader-title" style="display: none;">Afram Basics</div><div class="a-loader-title" style="display: none;">Afram Basics</div><div class="a-loader-title" style="display: none;">Afram Basics</div></a-scene>
-</body>
+    <!-- Ground of Maze -->
+    <a-plane src="#ded" height="300" width="300" depth="-2.5" rotation="-90 0" material="" geometry="" visible="" position="0 .1 0"></a-plane>
+    </a-scene> 
+  </body>
 </html>
+
