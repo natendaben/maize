@@ -80,7 +80,99 @@
     <a-obj-model src="#wolf" color="grey" scale=".01 .01 .01" position="-24.46 0.02 14.62" rotation="0 -90 0"></a-obj-model>
 
     <!-- megan's stuff -->
-    <a-obj-model src="#panda" color="grey" scale=".001 .001 .001" position="30.59 0.01 -9.39" rotation="0 0 0"></a-obj-model>
+    <a-obj-model src="#panda" c<html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <meta charset="utf-8" />
+    <title>Maize</title>
+    <meta name="description" content="demo: aframe-maze-component" />
+    <script async="" src="https://www.google-analytics.com/analytics.js"></script><script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.2.0/dist/aframe-extras.min.js"></script>
+    <script src="https://unpkg.com/aframe-maze-component@0.1.20/dist/aframe-maze-component.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.16/webfont.js"></script><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto+Mono" media="all" /><script>WebFont.load({google: {families: ["Roboto Mono"]}});</script></head>
+
+  <body class="a-body aframe-inspector-opened">
+    <!-- Create scene object -->
+    <a-scene physics="debug: false" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="" class="fullscreen" canvas="" auto-enter-vr="">
+
+    <!-- This code controls the "player"-->
+      <a-entity id="player" camera="" universal-controls="" kinematic-body="" position="40 10 60" rotation="" scale="" visible="" velocity="" gamepad-controls="" keyboard-controls="" touch-controls="" hmd-controls="" mouse-controls=""> <!-- starting point for player -->
+      </a-entity>
+
+    <!-- ONLY CHANGE CODE BELOW THIS LINE TO AVOID MESSING UP PHYSICS -->
+    <!-- _______________________________________________________________________________ -->
+    <!--Textures from images-->
+    <a-assets>
+      <img id="ded" src="img/ded.jpg" />
+      <img id="sky" src="img/sky.jpg" />
+      <img id="briq" src="img/briq.jpeg" />
+      <img id="hard" src="img/hard.jpg" />
+      <img id="mazemap" src="img/tinymaze.jpg" />
+      <a-asset-item id="rat" src="assets/rat.obj"></a-asset-item>
+      <a-asset-item id="wolf" src="assets/wolf.obj"></a-asset-item>
+      <a-asset-item id="panda" src="assets/panda.obj"></a-asset-item>
+      <a-asset-item id="billy" src="assets/billy.obj"></a-asset-item>
+      <a-asset-item id="unicorn" src="assets/unicorn.obj"></a-asset-item>
+      <a-asset-item id="road" src="assets/road.obj"></a-asset-item>
+    </a-assets>
+
+    <!-- Code for the sky -->
+    <a-sky src="#sky" material="" geometry="" position="" rotation="" scale="" visible=""></a-sky>
+
+
+
+
+    <!-- Code for the maze -->
+    <a-box src="#ded" id="ground" position="0 -0.5 0" width="200" height="1" depth="200" static-body="" material="src: #texture-floor" rotation="" scale="" visible="" geometry=""></a-box>
+    <a-box static-body="" position="20.73515 0 -14.2694" color="red" depth="1" material="" geometry="" scale="5 15 45" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="-34.55649 0 -47.47298" color="red" depth="1" material="" geometry="" scale="25 15 5" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="-46.877 0" color="red" depth="1" material="" geometry="" scale="5 15 100" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="-7.73387 0 47.23244" color="red" depth="1" material="" geometry="" scale="75 15 5" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="46.67662 0 0.9573" color="red" depth="1" material="" geometry="" scale="5 15 100" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="13.52766 0 32.71" color="red" depth="1" material="" geometry="" scale="18 15 5" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="32.04762 0 39.80026" color="red" depth="1" material="" geometry="" scale="5 15 20" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="-19.37451 0 7.36499" color="red" depth="1" material="" geometry="" scale="23 15 5" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="-32.73407 0 13.28699" color="red" depth="1" material="" geometry="" scale="5 15 45" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="21.7123 0 -46.8185" color="red" depth="1" material="" geometry="" scale="55 15 5" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="-6.26912 0 19.95035" color="red" depth="1" material="" geometry="" scale="5 15 30" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="20.17495 0 26.64971" color="red" depth="1" material="" geometry="" scale="8 15 5" src="#briq" rotation="0 90" visible=""></a-box>
+    <a-box static-body="" position="31.36348 0 20.32419" color="red" depth="1" material="" geometry="" scale="27 15 5" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="-20.67472 0 -12.62256" color="red" depth="1" material="" geometry="" scale="5 15 15" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="-8.03727 0 -20.30899" color="red" depth="1" material="" geometry="" scale="55 15 5" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="1.64746 0 19.59285" color="red" depth="1" material="" geometry="" scale="15 15 5" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="6.91906 0 -38.50742" color="red" depth="1" material="" geometry="" scale="5 15 15" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="30.21901 0 -34.24457" color="red" depth="1" material="" geometry="" scale="15 15 5" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="6.43758 0 13.10506" color="red" depth="1" material="" geometry="" scale="5 15 10" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="11.13183 0 5.94682" color="red" depth="1" material="" geometry="" scale="15 15 5" src="#briq" rotation="" visible=""></a-box>
+    <a-box static-body="" position="-20.43404 0 -34.9838" color="red" depth="1" material="" geometry="" scale="30 15 5" src="#briq" rotation="0 90" visible=""></a-box>
+    <a-box static-body="" position="0 7.5" color="grey" depth="1" material="" geometry="" scale="100 1 100" src="#hard" visible="" rotation=""></a-box>
+
+    <!-- phil's stuff -->
+    <a-obj-model src="#rat" color="grey" scale="5 5 5" position="-4 0 -4" rotation="0 0 0" visible="" material="" obj-model=""></a-obj-model>
+
+    <a-obj-model src="#billy" color="grey" scale=".025 .025 .025 obj-model=" obj:assets="" billy.obj"="" position="62.35 -9 51" rotation="0 -48 -0" visible="" material="" obj-model=""></a-obj-model>
+
+    <a-obj-model src="#road" color="black" scale="5 1 18.5" obj-model="obj:assets/road.obj" position="-129.5 1 150.26" rotation="0 0 0" visible="" material=""></a-obj-model>
+
+    <!-- Jen's section -->
+    <a-obj-model src="#wolf" color="grey" scale=".01 .01 .01" position="-24.46 0.02 14.62" rotation="0 -90 0" visible="" material="" obj-model=""></a-obj-model>
+
+    <!-- megan's stuff -->
+    <a-obj-model src="#panda" color="grey" scale=".001 .001 .001" position="30.59 0.01 -9.39" rotation="0 0 0" visible="" material="" obj-model=""></a-obj-model>
+
+    <!-- nate is not last -->
+
+    <!-- joanne's section -->
+    <a-obj-model src="assets/unicorn.obj" color="white" scale=".25 .25 .25" position="25 0 -25" rotation="0 0 0" visible="" material="" obj-model=""></a-obj-model>
+
+
+
+    <!-- Ground of Maze -->
+    <a-plane src="#ded" height="300" width="300" depth="-2.5" rotation="-90 0" material="" geometry="" visible="" position="0 .1 0" scale=""></a-plane>
+
+    <!-- _______________________________________________________________________________ -->
+    <canvas class="a-canvas" data-aframe-canvas="true" width="2174" height="1331" style="width: 1208px; height: 740px;"></canvas><a-entity camera="" position="" rotation="" scale="" visible=""></a-entity></a-scene>
+
+
+<div class="a-inspector-loader">Loading Inspector<span class="dots"><span>.</span><span>.</span><span>.</span></span></div><a style="display: none;"></a></body></html>olor="grey" scale=".001 .001 .001" position="30.59 0.01 -9.39" rotation="0 0 0"></a-obj-model>
 
     <!-- nate is not last -->
 
