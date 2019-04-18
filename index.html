@@ -11,7 +11,7 @@
 
   <body>
     <!-- Create scene object -->
-    <a-scene physics="debug: false" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="">      
+    <a-scene physics="debug: false" inspector="" keyboard-shortcuts="" screenshot="" vr-mode-ui="">
 
     <!-- This code controls the "player"-->
       <a-entity id="player"
@@ -32,6 +32,8 @@
       <img id="mazemap" src="img/tinymaze.jpg">
       <a-asset-item id="rat" src="assets/rat.obj"></a-asset-item>
       <a-asset-item id="wolf" src="assets/wolf.obj"></a-asset-item>
+      <a-asset-item id="wolf" src="assets/unicorn.obj"></a-asset-item>
+
 
 
     </a-assets>
@@ -62,18 +64,19 @@
     <a-box static-body position="1.64746 0 19.59285" color="red" depth="1" material="" geometry="" scale="15 15 5" src="#briq"></a-box>
     <a-box static-body position="6.91906 0 -38.50742" color="red" depth="1" material="" geometry="" scale="5 15 15" src="#briq"></a-box>
     <a-box static-body position="30.21901 0 -34.24457" color="red" depth="1" material="" geometry="" scale="15 15 5" src="#briq"></a-box>
-    <a-box static-body position="6.43758 0 13.10506" color="red" depth="1" material="" geometry="" scale="5 15 10" src="#briq"></a-box>  
+    <a-box static-body position="6.43758 0 13.10506" color="red" depth="1" material="" geometry="" scale="5 15 10" src="#briq"></a-box>
     <a-box static-body position="11.13183 0 5.94682" color="red" depth="1" material="" geometry="" scale="15 15 5" src="#briq"></a-box>
     <a-box static-body position="-20.43404 0 -34.9838" color="red" depth="1" material="" geometry="" scale="30 15 5" src="#briq" rotation="0 90"></a-box>
     <a-box static-body position="0 7.5" color="grey" depth="1" material="" geometry="" scale="100 1 100" src="#hard" visible=""></a-box>
     <a-obj-model src="assets/rat.obj" color="darkslateblue" scale="5 5 5" position="-4 0 -4" rotation="-90 0 0"></a-obj-model>
     <a-obj-model src="#wolf" material="normalScale:{&quot;x&quot;:1,&quot;y&quot;:1}" obj-model="obj:assets/wolf.obj"></a-obj-model>
+    <a-obj-model src="assets/unicorn.obj" color="white" scale=".25 .25 .25" position="25 0 -25" rotation="0 0 0"></a-obj-model>
+
 
     <!-- Ground of Maze -->
     <a-plane src="#ded" height="300" width="300" depth="-2.5" rotation="-90 0" material="" geometry="" visible="" position="0 -2 0"></a-plane>
 
     <!-- _______________________________________________________________________________ -->
-    </a-scene> 
+    </a-scene>
   </body>
 </html>
-
