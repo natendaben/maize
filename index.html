@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Maize</title>
     <meta name="description" content="demo: aframe-maze-component">
-    <script src="https://aframe.io/releases/0.4.0/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v3.2.0/dist/aframe-extras.min.js"></script>
     <script src="https://unpkg.com/aframe-maze-component@0.1.20/dist/aframe-maze-component.min.js"></script>
   </head>
@@ -41,16 +41,13 @@
       <a-asset-item id="cloud" src="assets/cloud.obj"></a-asset-item>
       <a-asset-item id="fence" src="assets/fence.obj"></a-asset-item>
       <a-asset-item id="tree" src="assets/tree/scene.gltf"></a-asset-item>
-      <a-asset-item id="deer" src="assets/deer/scene.gltf"></a-asset-item>
-      <a-asset-item id="imp" src="assets/imp/scene.gltf"></a-asset-item>
     </a-assets>
 
-    <a-entity gltf-model="#tree"></a-entity>
 
     <!-- Code for the sky -->
     <a-sky src="#sky" material="" geometry=""></a-sky>
 
-
+<a-entity gltf-model="#tree"></a-entity>
     
 
     <!-- Code for the maze -->
@@ -122,13 +119,7 @@
     <a-obj-model src="#cat" color="orange" scale=".1 .1 .1" position="35.15 .14 10.84" rotation="270 270 0"></a-obj-model>
 
     <!-- nate is not last -->
-    <a-entity gltf-model="#deer"></a-entity>
-    <a-entity id='ball'
-          position="0 1 -4"
 
-    >
-    <a-entity id='imp-model' gltf-model="#imp"></a-entity>
-  </a-entity>
 
 
     <!-- joanne's section -->
