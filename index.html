@@ -18,7 +18,7 @@
           camera
           universal-controls
           kinematic-body
-          position="40 10 60"> <!-- starting point for player -->
+          position="-40 50 100"> <!-- starting point for player -->
       </a-entity>
 
     <!-- ONLY CHANGE CODE BELOW THIS LINE TO AVOID MESSING UP PHYSICS -->
@@ -37,6 +37,7 @@
       <a-asset-item id="wolf" src="assets/wolf.obj"></a-asset-item>
       <a-asset-item id="panda" src="assets/panda.obj"></a-asset-item>
       <a-asset-item id="billy" src="assets/billboard/scene.gltf"></a-asset-item>
+      <a-asset-item id="cat" src="assets/cat.obj"></a-asset-item>
       <a-asset-item id="unicorn" src="assets/unicorn.obj"></a-asset-item>
       <a-asset-item id="road" src="assets/road.obj"></a-asset-item>
       <a-asset-item id="truck" src="assets/truck.obj"></a-asset-item>
@@ -53,6 +54,9 @@
       <a-asset-item id="treethree" src="assets/treethree/scene.gltf"></a-asset-item>
       <a-asset-item id="treethree" src="assets/treethree/scene.gltf"></a-asset-item>
       <a-asset-item id="fence2" src="assets/fence/scene.gltf"></a-asset-item>
+
+      <a-asset-item id="rooster" src="assets/rooster/scene.gltf"></a-asset-item>
+      <a-asset-item id="doggo" src="assets/doggo/scene.gltf"></a-asset-item>
 
       <a-asset-item id="dragon" src="assets/dragon.obj"></a-asset-item>
       <a-asset-item id="throne" src="assets/gameofthrones.obj"></a-asset-item>
@@ -89,10 +93,10 @@
     <a-box static-body position="11.13183 0 5.94682" color="red" depth="1" material="" geometry="" scale="15 15 5" src="#briq"></a-box>
 
     <a-box static-body position="-3.52 0 -66.39" color="red" depth="1" material="" geometry="" scale="5 15 33.92" src="#briq"></a-box>
-    <a-box static-body position="11.09 0 -84.27" color="red" depth="1" material="" geometry="" scale="34.25 15 5" src="#briq"></a-box>
+<!--     <a-box static-body position="11.09 0 -84.27" color="red" depth="1" material="" geometry="" scale="34.25 15 5" src="#briq"></a-box>
     <a-box static-body position="29.79 0 -78.35" color="red" depth="1" material="" geometry="" scale="5 15 16.79" src="#briq"></a-box>
     <a-box static-body position="40.25 0 -72.49" color="red" depth="1" material="" geometry="" scale="17.86 15 5" src="#briq"></a-box>
-    <a-box static-body position="46.69 0 -59.56" color="red" depth="1" material="" geometry="" scale="5 15 21.66" src="#briq"></a-box>
+    <a-box static-body position="46.69 0 -59.56" color="red" depth="1" material="" geometry="" scale="5 15 21.66" src="#briq"></a-box> -->
 
     <a-box static-body position="-20.43404 0 -34.9838" color="red" depth="1" material="" geometry="" scale="30 15 5" src="#briq" rotation="0 90"></a-box>
     <a-box static-body position="0 7.5" color="grey" depth="1" material="" geometry="" scale="100 2 105" src="#hard" visible=""></a-box>
@@ -122,11 +126,11 @@
 
 
     <!-- megan's stuff -->
-    <a-obj-model src="#panda" color="grey" scale=".001 .001 .001" position="30.59 0.15 -9.39" rotation="0 0 0"></a-obj-model>
-
+    <a-obj-model src="#panda" color="grey" scale=".001 .001 .001" position="24.509 -0.626 -30.572" rotation="0 0 0"></a-obj-model>
     <a-obj-model src="#cat" color="orange" scale=".09 .09 .09" position="35.15 .14 10.84" rotation="270 270 0"></a-obj-model>
-
-
+    <a-entity static-body gltf-model="#rooster" position="40.998 0 -22.338" scale=".03 .03 .03"></a-entity>
+    <a-entity static-body gltf-model="#doggo" position="34.776 0 -9.655" scale=".5 .5 .5" rotation="0 180 0"></a-entity>
+  
     <!-- nate is not last -->
     <a-entity static-body gltf-model="#deer" position="16.891 0 -60.674" scale=".4 .4 .4"></a-entity>
     <a-entity static-body gltf-model="#fountain" position="8.345 0 -62.416" scale="3 3 3"></a-entity>
@@ -138,8 +142,19 @@
     <a-entity static-body gltf-model="#treetwo" position="190.000 0 -40.000" scale="4 4 4"></a-entity>
     <a-entity static-body gltf-model="#treethree" position="100.000 0 -62.416" scale="2 2 2"></a-entity>
     <a-entity static-body gltf-model="#treethree" position="100.000 0 -62.416" scale="2 2 2"></a-entity>
+    <a-entity static-body gltf-model="#fence2" position="11.554 0 -85.078" rotation="0 -111" scale="4 4 4"></a-entity>
+    <a-entity static-body gltf-model="#fence2" position="29.617 0 -85.078" rotation="0 -111" scale="4 4 4"></a-entity>
+    <a-entity static-body gltf-model="#fence2" position="49.333 0 -70.112" rotation="0 -111" scale="4 4 4"></a-entity>
+    <a-entity static-body gltf-model="#fence2" position="49.333 0 -67.801" rotation="0 -21.000" scale="4 4 4"></a-entity>
+    <a-entity static-body gltf-model="#fence2" position="30.877 0 -85.836" rotation="0 -21.000" scale="4 4 4"></a-entity>
 
-    <a-plane src="#meadow" position="5.854 0.150 -75.749" rotation="-90 0" scale=".7 .7 .7"></a-plane>
+
+
+    <a-plane src="#meadow" height="300" width="300" depth="-2.5" position="4.398 .2 -75.555" rotation="-90 0" scale=".06 .06 .06"></a-plane>
+    <a-plane src="#meadow" height="300" width="300" depth="-2.5" position="22.397 .2 -75.555" rotation="-90 0" scale=".06 .06 .06"></a-plane>
+    <a-plane src="#meadow" height="300" width="300" depth="-2.5" position="4.398 .2 -57.583" rotation="-90 0" scale=".06 .06 .06"></a-plane>
+    <a-plane src="#meadow" height="300" width="300" depth="-2.5" position="22.342 .2 -57.583" rotation="-90 0" scale=".06 .06 .06"></a-plane>
+    <a-plane src="#meadow" height="300" width="300" depth="-2.5" position="40.297 .2 -59.582" rotation="-90 0" scale=".06 .07 .06"></a-plane>
 
 
     <!-- joanne's section -->
