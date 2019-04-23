@@ -33,6 +33,7 @@
       <img id="shiny" src="img/shiny.jpg">
       <img id="meadow" src="img/meadow.jpg">
       <img id="rainbow" src="img/rainbow.jpg">
+      <img id="stone" src="img/stone.jpg">
 
       <a-asset-item id="rat" src="assets/rat/scene.gltf"></a-asset-item>
       <a-asset-item id="wolf" src="assets/wolf.obj"></a-asset-item>
@@ -138,29 +139,39 @@
 
 
     <!-- nate is not last -->
-    <a-entity static-body><a-entity static-body gltf-model="#deer" position="16.891 0 -60.674" scale=".4 .4 .4"></a-entity></a-entity>
-    <a-entity static-body gltf-model="#fountain" position="8.345 0 -62.416" scale="3 3 3"></a-entity>
-    <a-entity static-body gltf-model="#grass" position="3.791 0 -69.118" scale="1 1 1"></a-entity>
-    <a-entity static-body gltf-model="#mushroom" position="150.000 0 -80.000" scale="3 3 3"></a-entity>
-    <a-entity static-body gltf-model="#rocks" position="100.000 .5 -80" scale="2 2 2"></a-entity>
-    <a-entity static-body gltf-model="#squirrel" position="15.303 1.500 -77.239" scale=".03 .03 .03"></a-entity>
-    <a-entity static-body gltf-model="#treeone" position="100.000 0 -62.426" scale="2 2 2"></a-entity>
-    <a-entity static-body gltf-model="#treetwo" position="190.000 0 -40.000" scale="4 4 4"></a-entity>
-    <a-entity static-body gltf-model="#treethree" position="100.000 0 -62.416" scale="2 2 2"></a-entity>
-    <a-entity static-body gltf-model="#treethree" position="100.000 0 -62.416" scale="2 2 2"></a-entity>
-    <a-entity static-body gltf-model="#fence2" position="11.554 0 -85.078" rotation="0 -111" scale="4 4 4"></a-entity>
-    <a-entity static-body gltf-model="#fence2" position="29.617 0 -85.078" rotation="0 -111" scale="4 4 4"></a-entity>
-    <a-entity static-body gltf-model="#fence2" position="49.333 0 -70.112" rotation="0 -111" scale="4 4 4"></a-entity>
-    <a-entity static-body gltf-model="#fence2" position="49.333 0 -67.801" rotation="0 -21.000" scale="4 4 4"></a-entity>
-    <a-entity static-body gltf-model="#fence2" position="30.877 0 -85.836" rotation="0 -21.000" scale="4 4 4"></a-entity>
+    <a-entity gltf-model="#deer" position="13.790 0 -55.935" rotation="0 136.354 0" scale=".4 .4 .4"></a-entity>
+    <a-entity gltf-model="#fountain" position="8.345 0 -62.416" scale="3 3 3"></a-entity>
+<!--     <a-entity gltf-model="#grass" position="3.791 0 -69.118" scale="1 1 1"></a-entity>
+ -->    
+    <a-entity gltf-model="#mushroom" position="251.000 0.2 -92.000" scale="5 5 5"></a-entity>
+    <a-entity gltf-model="#mushroom" position="152.000 0.2 -81.000" scale="3 3 3"></a-entity>
+    <a-entity gltf-model="#mushroom" position="293.000 0.2 -80.000" scale="5 5 5"></a-entity>
+    <a-entity gltf-model="#rocks" position="100.000 .5 -80" scale="2 2 2"></a-entity>
+    <a-entity gltf-model="#rocks" position="63.362 0.700 -171.000" rotation="-3.380 69.786 0.516" scale="3 3 3"></a-entity>
+    <a-entity gltf-model="#squirrel" position="8.134 1.700 -80.100" rotation="0 119.977 0" scale=".03 .03 .03"></a-entity>
+    <a-entity gltf-model="#treeone" position="100.000 0 -62.426" scale="2 2 2"></a-entity>
+    <a-entity gltf-model="#treeone" position="95.000 0 -70.000" scale="2 2 2"></a-entity>
+    <a-entity gltf-model="#treeone" position="120 0 -70.000" scale="2 2 2"></a-entity>
+    <a-entity gltf-model="#treetwo" position="190.000 0 -40.000" scale="4 4 4"></a-entity>
+    <a-entity gltf-model="#treetwo" position="150.670 0 -38.940" scale="3.5 3.5 3.5"></a-entity>
+    <a-entity gltf-model="#treetwo" position="188.000 0 -50.000" scale="3.5 3.5 3.5"></a-entity>
+    <a-entity gltf-model="#treethree" position="100.000 0 -62.416" scale="2 2 2"></a-entity>
+    <a-entity gltf-model="#treethree" position="177.000 0 -50.000" scale="3 3 3"></a-entity>
+    <a-entity gltf-model="#fence2" position="11.554 0 -85.078" rotation="0 -111" scale="4 4 4"></a-entity>
+    <a-entity gltf-model="#fence2" position="29.617 0 -85.078" rotation="0 -111" scale="4 4 4"></a-entity>
+    <a-entity gltf-model="#fence2" position="49.333 0 -70.112" rotation="0 -111" scale="4 4 4"></a-entity>
+    <a-entity gltf-model="#fence2" position="49.333 0 -67.801" rotation="0 -21.000" scale="4 4 4"></a-entity>
+    <a-entity gltf-model="#fence2" position="30.877 0 -85.836" rotation="0 -21.000" scale="4 4 4"></a-entity>
+    <a-box static-body src="#stone" position="15.056 -0.109 -65.094" rotation="11.402 43.201 -11.860" scale="5.000 2.633 10.100"></a-box>
+    <a-box static-body src="#stone" position="34.094 -0.310 -65.094" rotation="11.402 -124.504 -11.860" scale="5.000 2.763 4.530"></a-box>
+    <a-box static-body src="#stone" position="20.495 2.307 -78.244" rotation="3.610 -104.909 -6.532" scale="5.190 6.183 6.630"></a-box>
+    <a-box static-body src="#stone" position="21.259 0.641 -76.600" rotation="3.610 -104.909 -6.532" scale="4.870 2.283 6.700"></a-box>
 
-
-
-    <a-plane static-body src="#meadow" height="300" width="300" depth="-2.5" position="4.398 .2 -75.555" rotation="-90 0" scale=".06 .06 .06"></a-plane>
-    <a-plane static-body src="#meadow" height="300" width="300" depth="-2.5" position="22.397 .2 -75.555" rotation="-90 0" scale=".06 .06 .06"></a-plane>
-    <a-plane static-body src="#meadow" height="300" width="300" depth="-2.5" position="4.398 .2 -57.583" rotation="-90 0" scale=".06 .06 .06"></a-plane>
-    <a-plane static-body src="#meadow" height="300" width="300" depth="-2.5" position="22.342 .2 -57.583" rotation="-90 0" scale=".06 .06 .06"></a-plane>
-    <a-plane static-body src="#meadow" height="300" width="300" depth="-2.5" position="40.297 .2 -59.582" rotation="-90 0" scale=".06 .07 .06"></a-plane>
+    <a-plane src="#meadow" height="300" width="300" depth="-2.5" position="4.398 .2 -75.555" rotation="-90 0" scale=".06 .06 .06"></a-plane>
+    <a-plane src="#meadow" height="300" width="300" depth="-2.5" position="22.397 .2 -75.555" rotation="-90 0" scale=".06 .06 .06"></a-plane>
+    <a-plane src="#meadow" height="300" width="300" depth="-2.5" position="4.398 .2 -57.583" rotation="-90 0" scale=".06 .06 .06"></a-plane>
+    <a-plane src="#meadow" height="300" width="300" depth="-2.5" position="22.342 .2 -57.583" rotation="-90 0" scale=".06 .06 .06"></a-plane>
+    <a-plane src="#meadow" height="300" width="300" depth="-2.5" position="40.297 .2 -59.582" rotation="-90 0" scale=".06 .07 .06"></a-plane>
 
 
     <!-- joanne's section -->
