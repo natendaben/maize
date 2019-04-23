@@ -31,6 +31,8 @@
       <img id="hard" src="img/hard.jpg">
       <img id="mazemap" src="img/tinymaze.jpg">
       <img id="shiny" src="img/shiny.jpg">
+      <img id="meadow" src="img/meadow.jpg">
+
       <a-asset-item id="rat" src="assets/rat.obj"></a-asset-item>
       <a-asset-item id="wolf" src="assets/wolf.obj"></a-asset-item>
       <a-asset-item id="panda" src="assets/panda.obj"></a-asset-item>
@@ -40,17 +42,18 @@
       <a-asset-item id="truck" src="assets/truck.obj"></a-asset-item>
       <a-asset-item id="cloud" src="assets/cloud.obj"></a-asset-item>
       <a-asset-item id="fence" src="assets/fence.obj"></a-asset-item>
+
       <a-asset-item id="deer" src="assets/deer/scene.gltf"></a-asset-item>
-      <a-asset-item id="rock" src="assets/rock/scene.gltf"></a-asset-item>
       <a-asset-item id="fountain" src="assets/fountain/scene.gltf"></a-asset-item>
       <a-asset-item id="grass" src="assets/grass/scene.gltf"></a-asset-item>
       <a-asset-item id="mushroom" src="assets/mushroom/scene.gltf"></a-asset-item>
       <a-asset-item id="rocks" src="assets/rocks/scene.gltf"></a-asset-item>
-      <a-asset-item id="shrub" src="assets/shrub/scene.gltf"></a-asset-item>
       <a-asset-item id="squirrel" src="assets/squirrel/scene.gltf"></a-asset-item>
       <a-asset-item id="treeone" src="assets/treeone/scene.gltf"></a-asset-item>
       <a-asset-item id="treetwo" src="assets/treetwo/scene.gltf"></a-asset-item>
       <a-asset-item id="treethree" src="assets/treethree/scene.gltf"></a-asset-item>
+      <a-asset-item id="treethree" src="assets/treethree/scene.gltf"></a-asset-item>
+      <a-asset-item id="fence2" src="assets/fence/scene.gltf"></a-asset-item>
 
       <a-asset-item id="dragon" src="assets/dragon.obj"></a-asset-item>
       <a-asset-item id="throne" src="assets/gameofthrones.obj"></a-asset-item>
@@ -129,17 +132,11 @@
     <a-obj-model src="#throne" color="black" scale=".03 .03 .03" position="-23.00 2.00 18.11" rotation="270 0 270"></a-obj-model>
 
 
-
-
-
-
-
-
-
     <!-- megan's stuff -->
     <a-obj-model src="#panda" color="grey" scale=".001 .001 .001" position="30.59 0.15 -9.39" rotation="0 0 0"></a-obj-model>
 
     <a-obj-model src="#cat" color="orange" scale=".09 .09 .09" position="35.15 .14 10.84" rotation="270 270 0"></a-obj-model>
+
 
     <!-- nate is not last -->
     <a-entity static-body gltf-model="#deer" position="16.891 0 -60.674" scale=".4 .4 .4"></a-entity>
@@ -151,6 +148,9 @@
     <a-entity static-body gltf-model="#treeone" position="100.000 0 -62.426" scale="2 2 2"></a-entity>
     <a-entity static-body gltf-model="#treetwo" position="190.000 0 -40.000" scale="4 4 4"></a-entity>
     <a-entity static-body gltf-model="#treethree" position="100.000 0 -62.416" scale="2 2 2"></a-entity>
+    <a-entity static-body gltf-model="#treethree" position="100.000 0 -62.416" scale="2 2 2"></a-entity>
+
+    <a-plane src="#meadow" position="5.854 0.150 -75.749" rotation="-90 0" scale=".7 .7 .7"></a-plane>
 
 
     <!-- joanne's section -->
@@ -161,7 +161,7 @@
 
 
     <!-- Ground of Maze -->
-    <a-plane src="#ded" height="300" width="300" depth="-2.5" rotation="-90 0" material="" geometry="" visible="" position="0 .1 0"></a-plane>
+    <a-plane static-body src="#ded" height="300" width="300" depth="-2.5" rotation="-90 0" material="" geometry="" visible="" position="0 .1 0"></a-plane>
 
     <!-- _______________________________________________________________________________ -->
     </a-scene>
