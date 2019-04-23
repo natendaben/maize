@@ -36,6 +36,7 @@
       <a-asset-item id="rat" src="assets/rat.obj"></a-asset-item>
       <a-asset-item id="wolf" src="assets/wolf.obj"></a-asset-item>
       <a-asset-item id="panda" src="assets/panda.obj"></a-asset-item>
+      <a-asset-item id="cat" src="assets/cat.obj"></a-asset-item>
       <a-asset-item id="billy" src="assets/billy.obj"></a-asset-item>
       <a-asset-item id="unicorn" src="assets/unicorn.obj"></a-asset-item>
       <a-asset-item id="road" src="assets/road.obj"></a-asset-item>
@@ -55,8 +56,12 @@
       <a-asset-item id="treethree" src="assets/treethree/scene.gltf"></a-asset-item>
       <a-asset-item id="fence2" src="assets/fence/scene.gltf"></a-asset-item>
 
+      <a-asset-item id="rooster" src="assets/rooster/scene.gltf"></a-asset-item>
+      <a-asset-item id="doggo" src="assets/doggo/scene.gltf"></a-asset-item>
+
       <a-asset-item id="dragon" src="assets/dragon.obj"></a-asset-item>
       <a-asset-item id="throne" src="assets/gameofthrones.obj"></a-asset-item>
+      <a-asset-item id="lions" src="assets/lions/scene.gltf"></a-asset-item>
 
     </a-assets>
 
@@ -126,18 +131,22 @@
 
     <!-- Jen's section -->
     <a-obj-model static-body src="#wolf" color="grey" scale=".005 .005 .005" position="-24.46 0.02 14.62" rotation="0 -90 0"></a-obj-model>
+
+    <a-obj-model static-body src="#wolf" color="white" scale=".005 .005 .005" position="-26.46 0.02 14.62" rotation="0 -90 0"></a-obj-model>
     
-    <a-obj-model src="#dragon" color="orange" scale=".05 .05 .05" position="-18.46 0.00 18.62" rotation="270 0 0"></a-obj-model>
+    <a-obj-model src="#dragon" color="orange" scale=".05 .05 .05" position="-21.460 0.00 18.62" rotation="270 -30 0"></a-obj-model>
 
     <a-obj-model src="#throne" color="black" scale=".03 .03 .03" position="-23.00 2.00 18.11" rotation="270 0 270"></a-obj-model>
 
+   <a-entity gltf-model="#lions" position="-30.00 3.0 25.00" rotation="0 90 0"scale=".06 .06 .06"></a-entity>
+
 
     <!-- megan's stuff -->
-    <a-obj-model src="#panda" color="grey" scale=".001 .001 .001" position="30.59 0.15 -9.39" rotation="0 0 0"></a-obj-model>
-
+    <a-obj-model src="#panda" color="grey" scale=".001 .001 .001" position="24.509 -0.626 -30.572" rotation="0 0 0"></a-obj-model>
     <a-obj-model src="#cat" color="orange" scale=".09 .09 .09" position="35.15 .14 10.84" rotation="270 270 0"></a-obj-model>
-
-
+    <a-entity static-body gltf-model="#rooster" position="40.998 0 -22.338" scale=".03 .03 .03"></a-entity>
+    <a-entity static-body gltf-model="#doggo" position="34.776 0 -9.655" scale=".5 .5 .5" rotation="0 180 0"></a-entity>
+  
     <!-- nate is not last -->
     <a-entity static-body gltf-model="#deer" position="16.891 0 -60.674" scale=".4 .4 .4"></a-entity>
     <a-entity static-body gltf-model="#fountain" position="8.345 0 -62.416" scale="3 3 3"></a-entity>
