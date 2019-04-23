@@ -32,15 +32,16 @@
       <img id="mazemap" src="img/tinymaze.jpg">
       <img id="shiny" src="img/shiny.jpg">
       <img id="meadow" src="img/meadow.jpg">
+      <img id="rainbow" src="img/rainbow.jpg">
 
       <a-asset-item id="rat" src="assets/rat/scene.gltf"></a-asset-item>
       <a-asset-item id="wolf" src="assets/wolf.obj"></a-asset-item>
       <a-asset-item id="billy" src="assets/billboard/scene.gltf"></a-asset-item>
       <a-asset-item id="cat" src="assets/cat.obj"></a-asset-item>
-      <a-asset-item id="unicorn" src="assets/unicorn.obj"></a-asset-item>
+      <a-asset-item id="unicorn" src="assets/joanne/unicorn.obj"></a-asset-item>
       <a-asset-item id="road" src="assets/road.obj"></a-asset-item>
       <a-asset-item id="truck" src="assets/truck.obj"></a-asset-item>
-      <a-asset-item id="cloud" src="assets/cloud.obj"></a-asset-item>
+      <a-asset-item id="cloud" src="assets/joanne/cloud.obj"></a-asset-item>
 
       <a-asset-item id="deer" src="assets/deer/scene.gltf"></a-asset-item>
       <a-asset-item id="fountain" src="assets/fountain/scene.gltf"></a-asset-item>
@@ -68,16 +69,16 @@
 
     <!-- Code for the sky -->
     <a-sky src="#sky" material="" geometry=""></a-sky>
-    
+
 
     <!-- Code for the maze -->
     <a-box src="#ded" id="ground" position='0 -0.5 0' width="200" height="1" depth="200" static-body material="src: #texture-floor"></a-box>
     <a-box static-body position="20.73515 0 -14.2694" color="red" depth="1" material="" geometry="" scale="5 15 45" src="#briq"></a-box>
-    <a-box static-body position="-34.55649 0 -47.47298" color="red" depth="1" material="" geometry="" scale="25 15 5" src="#briq"></a-box>
+    <a-box static-body position="-34.55649 0 -47.47298" color="white" depth="1" material="" geometry="" scale="25 15 5" src="#rainbow"></a-box>
     <a-box static-body position="-46.877 0" color="red" depth="1" material="" geometry="" scale="5 15 100" src="#briq"></a-box>
     <a-box static-body position="-7.73387 0 47.23244" color="red" depth="1" material="" geometry="" scale="75 15 5" src="#briq"></a-box>
     <a-box static-body position="46.67662 0 0.9573" color="red" depth="1" material="" geometry="" scale="5 15 100" src="#briq"></a-box>
-    <a-box static-body position="13.52766 0 32.71" color="red" depth="1" material="" geometry="" scale="18 15 5" src="#briq"></a-box>
+    <a-box static-body position="7.827 0 32.710" color="red" depth="1" material="" geometry="" scale="30 15 5" src="#briq"></a-box>
     <a-box static-body position="32.04762 0 39.80026" color="red" depth="1" material="" geometry="" scale="5 15 20" src="#briq"></a-box>
     <a-box static-body position="-19.37451 0 7.36499" color="red" depth="1" material="" geometry="" scale="23 15 5" src="#briq"></a-box>
     <a-box static-body position="-32.73407 0 13.28699" color="red" depth="1" material="" geometry="" scale="5 15 45" src="#briq"></a-box>
@@ -86,8 +87,8 @@
     <a-box static-body position="20.17495 0 26.64971" color="red" depth="1" material="" geometry="" scale="8 15 5" src="#briq" rotation="0 90"></a-box>
     <a-box static-body position="31.36348 0 20.32419" color="red" depth="1" material="" geometry="" scale="27 15 5" src="#briq"></a-box>
     <a-box static-body position="-20.67472 0 -12.62256" color="red" depth="1" material="" geometry="" scale="5 15 15" src="#briq"></a-box>
-    <a-box static-body position="-8.03727 0 -20.30899" color="red" depth="1" material="" geometry="" scale="55 15 5" src="#briq"></a-box>
-    <a-box static-body position="1.64746 0 19.59285" color="red" depth="1" material="" geometry="" scale="15 15 5" src="#briq"></a-box>
+    <a-box static-body position="-0.462 0 -20.30899" color="red" depth="1" material="" geometry="" scale="45 15 5" src="#briq"></a-box>
+    <!-- <a-box static-body position="1.64746 0 19.59285" color="red" depth="1" material="" geometry="" scale="15 15 5" src="#briq"></a-box> -->
     <a-box static-body position="6.91906 0 -38.50742" color="red" depth="1" material="" geometry="" scale="5 15 15" src="#briq"></a-box>
     <a-box static-body position="30.21901 0 -34.24457" color="red" depth="1" material="" geometry="" scale="15 15 5" src="#briq"></a-box>
     <a-box static-body position="6.43758 0 13.10506" color="red" depth="1" material="" geometry="" scale="5 15 10" src="#briq"></a-box>
@@ -99,7 +100,7 @@
     <a-box static-body position="40.25 0 -72.49" color="red" depth="1" material="" geometry="" scale="17.86 15 5" src="#briq"></a-box>
     <a-box static-body position="46.69 0 -59.56" color="red" depth="1" material="" geometry="" scale="5 15 21.66" src="#briq"></a-box> -->
 
-    <a-box static-body position="-20.43404 0 -34.9838" color="red" depth="1" material="" geometry="" scale="30 15 5" src="#briq" rotation="0 90"></a-box>
+    <a-box static-body position="-20.43404 0 -34.9838" color="white" depth="1" material="" geometry="" scale="30 15 5" src="#rainbow" rotation="0 90"></a-box>
     <a-box static-body position="0 7.5" color="grey" depth="1" material="" geometry="" scale="100 2 105" src="#hard" visible=""></a-box>
 
 
@@ -118,7 +119,7 @@
     <a-obj-model static-body src="#wolf" color="grey" scale=".005 .005 .005" position="-24.46 0.02 14.62" rotation="0 -90 0"></a-obj-model>
 
     <a-obj-model static-body src="#wolf" color="white" scale=".005 .005 .005" position="-26.46 0.02 14.62" rotation="0 -90 0"></a-obj-model>
-    
+
     <a-obj-model src="#dragon" color="orange" scale=".05 .05 .05" position="-21.460 0.00 18.62" rotation="270 -30 0"></a-obj-model>
 
     <a-obj-model src="#throne" color="black" scale=".03 .03 .03" position="-23.00 2.00 18.11" rotation="270 0 270"></a-obj-model>
@@ -135,7 +136,7 @@
     <a-entity static-body gltf-model="#bucket" position="29.450 0 -14.710" scale=".07 .07 .07" rotation="0 90 0"></a-entity>
     <a-entity static-body gltf-model="#bucket" position="42.417 0 2.317" scale=".05 .05 .05"></a-entity>
 
-  
+
     <!-- nate is not last -->
     <a-entity static-body><a-entity static-body gltf-model="#deer" position="16.891 0 -60.674" scale=".4 .4 .4"></a-entity></a-entity>
     <a-entity static-body gltf-model="#fountain" position="8.345 0 -62.416" scale="3 3 3"></a-entity>
@@ -163,10 +164,22 @@
 
 
     <!-- joanne's section -->
-    <a-obj-model src="assets/unicorn.obj" color="white" scale=".1 .1 .1" position="-40.32 0 -42.63" rotation="0 0 0"></a-obj-model>
-    <a-obj-model src="assets/cloud.obj" color="white" scale="0.75 0.75 1" position="-31.27 6 -38.10" rotation="90 0 0"></a-obj-model>
-    <a-obj-model src="assets/cloud.obj" color="white" scale="1 1 1" position="-38.19 7 -25.28" rotation="90 0 0"></a-obj-model>
-
+    <a-plane static-body src="#rainbow" height="50" width="50" depth="-2.5" position="-34.208 .13 -28.872" rotation="-90 0" scale="0.600 0.800 .06"></a-plane>
+    <a-obj-model src="assets/joanne/cloud.obj" color="white" scale="0.75 0.75 1" position="-40.222 6 -14.382" rotation="90 0 0"></a-obj-model>
+    <a-obj-model src="assets/joanne/cloud.obj" color="white" scale="1 1 1" position="-38.19 7 -32.535" rotation="90 0 0"></a-obj-model>
+    <a-obj-model src="assets/joanne/cloud.obj" color="white" scale=".5 .5 .5" position="-27.959 7 -24.339" rotation="90 0 0"></a-obj-model>
+    <a-obj-model src="assets/joanne/cloud.obj" color="white" scale=".5 .5 .5" position="-29.304 7 -15.903" rotation="90 0 0"></a-obj-model>
+    <a-obj-model src="assets/joanne/unicorn.obj" color=#ffe5f0 scale=".1 .1 .1" position="-39.566 0 -42.993" rotation="0 45 0"></a-obj-model>
+    <a-obj-model src="assets/joanne/whale.obj" color=#e5ffff scale=".1 .1 .1" position="-30.32 0 -32.63" rotation="0 0 0"></a-obj-model>
+    <a-obj-model src="assets/joanne/fox.obj" color=#ffd89e scale=".07 .07 .07" position="-36.893 0 -42.382" rotation="270 45 270"></a-obj-model>
+    <a-obj-model src="assets/joanne/ele.obj" color=#b5e5ff scale=".05 .05 .05" position="-37.885 0.975 -22.267" rotation="270 45 270"></a-obj-model>
+    <a-obj-model src="assets/joanne/kiwi.obj" color=#deffc1 scale=".04 .04 .04" position="-28.469 1.071 -20.304" rotation="270 45 270"></a-obj-model>
+    <a-obj-model src="assets/joanne/tree.obj" color=#c9ffe7 scale=".07 .07 .07" position="-25.617 0 -18.907" rotation="270 0 270"></a-obj-model>
+    <a-obj-model src="assets/joanne/tree.obj" color=#c9ffc9 scale=".1 .1 .1" position="-40.931 0 -27.965" rotation="270 45 270"></a-obj-model>
+    <a-obj-model src="assets/joanne/squirrel.obj" color=#ffe8c9 scale=".07 .07 .07" position="-41.921 0 -22.913" rotation="270 135 270"></a-obj-model>
+    <a-obj-model src="assets/joanne/lizard.obj" color=#c9ffed scale=".07 .07 .07" position="-44.337 3.679 -10.506" rotation="-225 0 270"></a-obj-model>
+    <a-obj-model src="assets/joanne/hummingbird.obj" color=#c9e5ff scale=".02 .02 .02" position="-29.984 -3.648 -20.304" rotation="270 45 180"></a-obj-model>
+    <a-obj-model src="assets/joanne/hummingbird.obj" color=#ffc9dc scale=".03 .03 .03" position="-30.306 -8.090 -20.304" rotation="270 135 200"></a-obj-model>
 
 
     <!-- Ground of Maze -->
