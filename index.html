@@ -36,10 +36,12 @@
       <img id="stone" src="img/stone.jpg">
       <img id="snow" src="img/snow.jpg">
       <img id="trees" src="img/trees.jpg">
+      <img id="city" src="img/city.jpg">
 
       <a-asset-item id="rat" src="assets/rat/scene.gltf"></a-asset-item>
       <a-asset-item id="wolf" src="assets/wolf.obj"></a-asset-item>
       <a-asset-item id="billy" src="assets/billboard/scene.gltf"></a-asset-item>
+      <a-asset-item id="walk" src="assets/walk/scene.gltf"></a-asset-item>
       <a-asset-item id="tinfence" src="assets/tin_fence/scene.gltf"></a-asset-item>
       <a-asset-item id="cat" src="assets/cat.obj"></a-asset-item>
       <a-asset-item id="unicorn" src="assets/joanne/unicorn.obj"></a-asset-item>
@@ -149,6 +151,19 @@
      <a-entity static-body="sphereRadius:NaN" gltf-model=#car2 position="86.067 0 58.063" rotation="0 -45 0" scale="0.1 0.1 0.1"></a-entity>
 
      <a-entity static-body="sphereRadius:NaN" gltf-model=#wheels position="14.728 0 -12.882" rotation="0 26.527945914557115 0" scale="0.02 0.02 0.02"></a-entity>
+
+    <a-plane src="#city" height="300" width="300" depth="-2.5" position="0 3.167 -17.743" scale="0.12 0.03 0"></a-plane>
+
+    <a-plane src="#city" height="300" width="300" depth="-2.5" position="-18.156 3.167 -12.912" scale="0.05 0.03 0" rotation="0 90 0" material="" geometry=""></a-plane>
+
+    <a-plane src="#city" height="300" width="300" depth="-2.5" position="12.508 3.167 3.446" scale="0.06 0.03 0" rotation="0 180 0" material="" geometry=""></a-plane>
+
+    <a-plane src="#city" height="300" width="300" depth="-2.5" position="12.508 3.167 3.446" scale="0.06 0.03 0" rotation="0 180 0" material="" geometry=""></a-plane>
+
+    <a-plane src="#city" height="300" width="300" depth="-2.5" position="18.168 3.167 -6.847" scale="0.08 0.03 0" rotation="0 270 0" material="" geometry=""></a-plane>
+
+    
+    <a-entity gltf-model="assets/walk/scene.gltf" position="1.477 -9.403 -8.989" scale="20 10 15"></a-entity>
 
 
 
